@@ -1,60 +1,48 @@
 # Netflix-Recommendation-System
 A Netflix recommendation system project focused on data cleaning, preparation, and analysis to improve movie recommendations using TMDB data.
-Here is a draft for your README.md based on the content I could extract from your project file:
 
 ---
 
-# Netflix Movie Recommender System
+# NYC Fire Incidents Analysis
 
-## Project Overview
-This project aims to develop a Netflix Movie Recommender system using various machine learning techniques and data preprocessing methods. The project includes data cleaning, text mining, and the application of recommendation algorithms to suggest movies to users based on their preferences.
+## Overview
+This repository hosts tools and scripts for analyzing a large dataset of fire incidents in New York City. The project aims to uncover insights into response times, incident classifications, and temporal trends across NYC boroughs. It utilizes Python for data manipulation, Docker for containerization, and OpenSearch for efficient data storage and visualization.
 
-## Libraries Used
-- Pandas
-- Numpy
-- Scikit-learn
-- NLTK
-- Matplotlib
+## Key Features
+- **Data Exploration**: Dive into detailed analysis of dispatch and incident response times.
+- **Visualization**: Generate interactive charts and graphs using OpenSearch Dashboards.
+- **Scripted Analysis**: Python scripts automate data preprocessing, analysis, and visualization tasks.
+- **Containerized Deployment**: Easily replicate the environment with Docker for consistent results across platforms.
 
-## Cleaning DataFrame
-This section is responsible for cleaning the dataset:
-1. Checking for null data and rows with 0 runtime.
-2. Filling in missing runtime and overview information using an API key from the TMDB website.
-3. Creating functions to extract specific data from multiple columns.
-4. Converting text to lowercase, removing spaces, and combining relevant data into new columns.
-5. Renaming and dropping columns for clarity.
-6. Creating a new dataframe with the cleaned data.
-7. Joining the "tag", "tag_genres", and "tag_ppl" lists into single string values for further processing.
+## Project Structure
+- **data/**: Raw and processed datasets, including CSV files and data dictionaries.
+- **scripts/**: Python scripts for data cleaning, analysis, and visualization.
+- **docker/**: Dockerfile for setting up the development environment.
+- **visualizations/**: Output directory for generated graphs and charts.
 
-## Text Mining Preprocessing Techniques
+## Technologies Used
+- **Python**: Pandas, Matplotlib, and Seaborn for data analysis and visualization.
+- **Docker**: Simplifies environment setup and ensures reproducibility.
+- **OpenSearch**: Stores and queries data, providing insights through visual dashboards.
 
-This section includes text mining processing techniques such as:
-- Removing punctuation
-- Tokenization
-- Stop words removal
-- Lemmatization
+## Setup Instructions
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/NYC-Fire-Incidents-Analysis.git
+   cd NYC-Fire-Incidents-Analysis
+   ```
+2. **Build and Run Docker Container**:
+   ```bash
+   docker build -t nyc-fire-analysis .
+   docker run -p 8080:8080 nyc-fire-analysis
+   ```
+3. **Explore Data and Scripts**:
+   - Use scripts in `scripts/` to preprocess data, generate visualizations, and analyze trends.
+   - Customize scripts and parameters for specific analysis needs.
 
-## Recommendation Algorithm
-The recommendation algorithm used in this project includes:
-1. **Content-based Filtering:** Recommends movies based on the similarity of their content to movies the user has previously enjoyed.
-2. **Collaborative Filtering:** Recommends movies based on the preferences of other users who have similar tastes.
-
-## Evaluation
-The performance of the recommender system was evaluated using metrics such as:
-- Precision
-- Recall
-- F1 Score
-
-## Conclusion
-The Netflix Movie Recommender System successfully provides personalized movie recommendations based on user preferences and viewing history. Future improvements could include incorporating more sophisticated algorithms and additional data sources.
-
-## How to Use
-1. Clone the repository.
-2. Install the required libraries using `pip install -r requirements.txt`.
-3. Run the Jupyter notebook to train the model and generate recommendations.
-
-
-
-
+## Visualizations
+- **Response Time Analysis**: Visualize average response times by borough and incident type.
+- **Temporal Trends**: Analyze monthly and yearly trends in fire incidents.
+- **Incident Classification**: Explore the distribution of incident types across NYC neighborhoods.
 
 
