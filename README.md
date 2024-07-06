@@ -13,10 +13,10 @@ A Netflix recommendation system project focused on data cleaning, preparation, a
 ```markdown
 # Netflix Recommendation System
 
-## Overview
+**Overview**
 This project aims to build a Netflix recommendation system using data cleaning, preparation, and analysis techniques. The dataset is sourced from TMDB (The Movie Database) and includes various attributes like movie titles, genres, runtime, and user votes.
 
-## Project Steps
+** Project Steps**
 
 ### 1. Data Cleaning
 - Checked for null values and rows with zero runtime.
@@ -45,7 +45,7 @@ This project aims to build a Netflix recommendation system using data cleaning, 
 - TMDB API
 - Data visualization libraries (e.g., Matplotlib, Seaborn)
 
-## Installation
+**Installation**
 1. Clone the repository:
    ```bash
    git clone https://github.com/maheshwarianmol/Netflix-Recommendation-System.git
@@ -59,7 +59,7 @@ This project aims to build a Netflix recommendation system using data cleaning, 
    pip install -r requirements.txt
    ```
 
-## Usage
+**Usage**
 1. Run the data cleaning script:
    ```bash
    python data_cleaning.py
