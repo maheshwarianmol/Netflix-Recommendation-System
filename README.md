@@ -8,12 +8,12 @@ A Netflix recommendation system project focused on data cleaning, preparation, a
 
 ---
 
-### README File Content
+ **README File Content**
 
 ```markdown
 # Netflix Recommendation System
 
-###Overview
+Overview
 This project aims to build a Netflix recommendation system using data cleaning, preparation, and analysis techniques. The dataset is sourced from TMDB (The Movie Database) and includes various attributes like movie titles, genres, runtime, and user votes.
 
 ###Project Steps
