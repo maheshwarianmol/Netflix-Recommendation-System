@@ -1,48 +1,74 @@
-# Netflix-Recommendation-System
+
+
+### Repository Name
+**Netflix-Recommendation-System**
+
+### Description
 A Netflix recommendation system project focused on data cleaning, preparation, and analysis to improve movie recommendations using TMDB data.
 
 ---
 
-# NYC Fire Incidents Analysis
+### README File Content
+
+```markdown
+# Netflix Recommendation System
 
 ## Overview
-This repository hosts tools and scripts for analyzing a large dataset of fire incidents in New York City. The project aims to uncover insights into response times, incident classifications, and temporal trends across NYC boroughs. It utilizes Python for data manipulation, Docker for containerization, and OpenSearch for efficient data storage and visualization.
+This project aims to build a Netflix recommendation system using data cleaning, preparation, and analysis techniques. The dataset is sourced from TMDB (The Movie Database) and includes various attributes like movie titles, genres, runtime, and user votes.
+
+## Project Steps
+
+### 1. Data Cleaning
+- Checked for null values and rows with zero runtime.
+- Filled missing data for runtime and overview using the TMDB API.
+- Extracted specific data, converted text to lowercase, removed spaces, and combined relevant data into new columns.
+- Joined lists in "tag", "tag_genres", and "tag_ppl" into single string values.
+
+### 2. Data Preparation
+- Created a new dataframe, `df_ready_to_vector`, by selecting relevant columns and renaming them.
+- Ensured the dataframe is ready for further analysis and modeling.
+
+### 3. Analysis
+- Analyzed the cleaned and prepared dataset to derive insights and recommendations.
+- Used various data visualization tools to display the data and findings.
 
 ## Key Features
-- **Data Exploration**: Dive into detailed analysis of dispatch and incident response times.
-- **Visualization**: Generate interactive charts and graphs using OpenSearch Dashboards.
-- **Scripted Analysis**: Python scripts automate data preprocessing, analysis, and visualization tasks.
-- **Containerized Deployment**: Easily replicate the environment with Docker for consistent results across platforms.
+- Data cleaning and preprocessing to ensure data quality.
+- API integration to fill missing data.
+- Dataframe preparation for analysis and modeling.
+- Exploratory data analysis and visualization.
 
-## Project Structure
-- **data/**: Raw and processed datasets, including CSV files and data dictionaries.
-- **scripts/**: Python scripts for data cleaning, analysis, and visualization.
-- **docker/**: Dockerfile for setting up the development environment.
-- **visualizations/**: Output directory for generated graphs and charts.
+## Tools and Technologies
+- Python
+- Pandas
+- NumPy
+- TMDB API
+- Data visualization libraries (e.g., Matplotlib, Seaborn)
 
-## Technologies Used
-- **Python**: Pandas, Matplotlib, and Seaborn for data analysis and visualization.
-- **Docker**: Simplifies environment setup and ensures reproducibility.
-- **OpenSearch**: Stores and queries data, providing insights through visual dashboards.
-
-## Setup Instructions
-1. **Clone the Repository**:
+## Installation
+1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/NYC-Fire-Incidents-Analysis.git
-   cd NYC-Fire-Incidents-Analysis
+   git clone https://github.com/maheshwarianmol/Netflix-Recommendation-System.git
    ```
-2. **Build and Run Docker Container**:
+2. Navigate to the project directory:
    ```bash
-   docker build -t nyc-fire-analysis .
-   docker run -p 8080:8080 nyc-fire-analysis
+   cd Netflix-Recommendation-System
    ```
-3. **Explore Data and Scripts**:
-   - Use scripts in `scripts/` to preprocess data, generate visualizations, and analyze trends.
-   - Customize scripts and parameters for specific analysis needs.
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Visualizations
-- **Response Time Analysis**: Visualize average response times by borough and incident type.
-- **Temporal Trends**: Analyze monthly and yearly trends in fire incidents.
-- **Incident Classification**: Explore the distribution of incident types across NYC neighborhoods.
-
-
+## Usage
+1. Run the data cleaning script:
+   ```bash
+   python data_cleaning.py
+   ```
+2. Prepare the dataframe for analysis:
+   ```bash
+   python data_preparation.py
+   ```
+3. Perform exploratory data analysis:
+   ```bash
+   python data_analysis.py
+   ```
