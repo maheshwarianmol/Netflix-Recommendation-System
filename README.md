@@ -44,8 +44,9 @@ This project aims to build a Netflix recommendation system using data cleaning, 
 - NumPy
 - TMDB API
 - Data visualization libraries (e.g., Matplotlib, Seaborn)
+```
 
-**Installation**
+Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/maheshwarianmol/Netflix-Recommendation-System.git
